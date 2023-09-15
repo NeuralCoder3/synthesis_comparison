@@ -40,57 +40,9 @@ give a short summary/table to compare the techniques especially with respect to 
 
 ### Summary
 
-<table>
-    <tr>
-        <th>
-            Technique
-        </th>
-        <td>
-            RL
-        </td>
-    </tr>
-    <tr>
-        <th>
-            Domain
-        </th>
-        <td>
-            RL
-        </td>
-    </tr>
-    <tr>
-        <th>
-            Requirements
-        </th>
-        <td>
-            RL
-        </td>
-    </tr>
-    <tr>
-        <th>
-            Result
-        </th>
-        <td>
-            RL
-        </td>
-    </tr>
-    <tr>
-        <th>
-            Guarantees
-        </th>
-        <td>
-            RL
-        </td>
-    </tr>
-    <tr>
-        <th>
-            Tools
-        </th>
-        <td>
-            RL
-        </td>
-    </tr>
-</table>
-
+<div style="width: 100%;">
+  <img src="Overview.svg" style="width: 100%;" alt="Click to see the source">
+</div>
 
 ### Reinforcement Learning
 

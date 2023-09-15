@@ -1,0 +1,72 @@
+<svg fill="none" viewBox="0 0 400 400" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+              .wrap { width: 400px; overflow-x: scroll;}
+              table { border-collapse: collapse; width: max-content; }
+              tr { display: block; float:left; }
+              th, td { display: block; border: 1px solid black; }
+            </style>
+            <div class="wrap">
+            <table>
+            <tr>
+                <th>Technique</th>
+                <th>Domain</th>
+                <th>Requirements</th>
+                <th>Result</th>
+                <th>Guarantees</th>
+                <th>Tools</th>
+            </tr>
+            <tr>
+                <td>Technique</td>
+                <td>Domain</td>
+                <td>Requirements</td>
+                <td>Result</td>
+                <td>Guarantees</td>
+                <td>Tools</td>
+            </tr>
+            <tr>
+                <td>Technique</td>
+                <td>Domain</td>
+                <td>Requirements</td>
+                <td>Result</td>
+                <td>Guarantees</td>
+                <td>Tools</td>
+            </tr>
+            <tr>
+                <td>Technique</td>
+                <td>Domain</td>
+                <td>Requirements</td>
+                <td>Result</td>
+                <td>Guarantees</td>
+                <td>Tools</td>
+            </tr>
+            <tr>
+                <td>Technique</td>
+                <td>Domain</td>
+                <td>Requirements</td>
+                <td>Result</td>
+                <td>Guarantees</td>
+                <td>Tools</td>
+            </tr>
+            <tr>
+                <td>Technique</td>
+                <td>Domain</td>
+                <td>Requirements</td>
+                <td>Result</td>
+                <td>Guarantees</td>
+                <td>Tools</td>
+            </tr>
+            <tr>
+                <td>Technique</td>
+                <td>Domain</td>
+                <td>Requirements</td>
+                <td>Result</td>
+                <td>Guarantees</td>
+                <td>Tools</td>
+            </tr>
+            </table>
+            </div>
+        </div>
+    </foreignObject>
+</svg>
