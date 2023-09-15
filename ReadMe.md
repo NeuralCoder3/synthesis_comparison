@@ -19,7 +19,7 @@ We inspect the following techniques:
     - with LLM
     - MCTS
 - AI Planning
-- Genetic Programming
+- Genetic Programming (evolutionary algorithms)
     - Genetic Neural Networks
 - Generative Networks
     - Large Language Models
@@ -80,12 +80,34 @@ See https://medium.com/xrpractices/reinforcement-learning-vs-genetic-algorithm-a
 
 ### AI Planning
 
+In planning, the problem is defined by actions and an environment.
+The environment consists of facts that are true.
+Actions depend on these facts and can change them.
 
+The problem is a search in a given state for a goal state.
+One does not need to define custom heuristics.
+
+Like Reinforcement learning, an action sequence is learned for a given state (in an environment).
+Unlike RL, the model knows the environment and action semantics completely.
+Hence, planning is more restricted in the choice of environment.
+
+You usually define the problem in PDDL.
 
 ### Genetic Programming
 
 <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*zF3DzW57qD_LOGO1jQwdcg.png" width="400px" />
 
+In genetic programming, you define a set of genes and ways to operate on them.
+The fitness of individuals is computes, and the most fit are selected, cross breeded, and mutated.
+
+Gentic algorithms are widely applicable.
+You can use weights of networks as genes, use genes and simulate complex behaviour on top of them, or directly operate on genes for the fitness function.
+
+GAs can solve search and optimization problems.
+
+In combination with neural networks, GA can be applied to learn the weights as well as the hyperparameters.
+The topic of neuroevolution including the NEAT algorithm focuses on GA for hyperparameters.
+It can also be combined with reinforcement learning.
 
 ### Generative Networks
 
