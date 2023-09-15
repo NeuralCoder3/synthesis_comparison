@@ -40,6 +40,56 @@ give a short summary/table to compare the techniques especially with respect to 
 
 ### Summary
 
+<table>
+    <tr>
+        <th>
+            Technique
+        </th>
+        <td>
+            RL
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Domain
+        </th>
+        <td>
+            RL
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Requirements
+        </th>
+        <td>
+            RL
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Result
+        </th>
+        <td>
+            RL
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Guarantees
+        </th>
+        <td>
+            RL
+        </td>
+    </tr>
+    <tr>
+        <th>
+            Tools
+        </th>
+        <td>
+            RL
+        </td>
+    </tr>
+</table>
 
 
 ### Reinforcement Learning
@@ -65,6 +115,7 @@ give a short summary/table to compare the techniques especially with respect to 
 - [Reinforcement Learning for Assembly Synthesis](https://github.com/NeuralCoder3/reinf_asm_synth)
 - [Stoke for Assembly Synthesis](https://github.com/NeuralCoder3/stoke-sort)
 - [SMT Synthesis of BitArithmetic](https://github.com/shack/synth)
+- [SMT Synthesis using MetaLift (Rosette)](https://github.com/NeuralCoder3/smt_synthesis)
 
 Papers:
 - ¹Program Synthesis, Gulwani et. al, 2017
