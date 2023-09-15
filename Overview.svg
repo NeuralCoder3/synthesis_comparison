@@ -17,6 +17,16 @@
                 <th>Result</th>
                 <th>Guarantees</th>
                 <th>Tools</th>
+                <th>Examples</th>
+            </tr>
+            <tr>
+                <td>Reinf Learning</td>
+                <td>Observations (Input) and Actions (Output)</td>
+                <td>Score function, non-standard encoding of problem</td>
+                <td>Action-plan(s)</td>
+                <td>None, but optimizes for score (can encode speed-requirement)</td>
+                <td>Gym, Torch</td>
+                <th>AlphaDev, AlphaTensor</th>
             </tr>
             <tr>
                 <td>Technique</td>
@@ -25,6 +35,7 @@
                 <td>Result</td>
                 <td>Guarantees</td>
                 <td>Tools</td>
+                <th>Examples</th>
             </tr>
             <tr>
                 <td>Technique</td>
@@ -33,6 +44,7 @@
                 <td>Result</td>
                 <td>Guarantees</td>
                 <td>Tools</td>
+                <th>Examples</th>
             </tr>
             <tr>
                 <td>Technique</td>
@@ -41,6 +53,7 @@
                 <td>Result</td>
                 <td>Guarantees</td>
                 <td>Tools</td>
+                <th>Examples</th>
             </tr>
             <tr>
                 <td>Technique</td>
@@ -49,6 +62,7 @@
                 <td>Result</td>
                 <td>Guarantees</td>
                 <td>Tools</td>
+                <th>Examples</th>
             </tr>
             <tr>
                 <td>Technique</td>
@@ -57,14 +71,7 @@
                 <td>Result</td>
                 <td>Guarantees</td>
                 <td>Tools</td>
-            </tr>
-            <tr>
-                <td>Technique</td>
-                <td>Domain</td>
-                <td>Requirements</td>
-                <td>Result</td>
-                <td>Guarantees</td>
-                <td>Tools</td>
+                <th>Examples</th>
             </tr>
             </table>
             </div>
