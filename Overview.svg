@@ -51,31 +51,31 @@
                 <td></td>
             </tr>
             <tr>
-                <td>Technique</td>
-                <td>Domain</td>
-                <td>Requirements</td>
-                <td>Result</td>
-                <td>Guarantees</td>
-                <td>Tools</td>
-                <td>Examples</td>
+                <td>Generative NN</td>
+                <td>Text queries</td>
+                <td>pre-trained model</td>
+                <td>program code</td>
+                <td>None</td>
+                <td>LLMs</td>
+                <td>GPT, CoPilot</td>
             </tr>
             <tr>
-                <td>Technique</td>
-                <td>Domain</td>
-                <td>Requirements</td>
-                <td>Result</td>
-                <td>Guarantees</td>
-                <td>Tools</td>
-                <td>Examples</td>
+                <td>Constraint Programming</td>
+                <td>restrictive Constraint</td>
+                <td>specific encoding</td>
+                <td>Solution</td>
+                <td>satisfy all constraints</td>
+                <td>Prolog, Z3</td>
+                <td></td>
             </tr>
             <tr>
-                <td>Technique</td>
-                <td>Domain</td>
-                <td>Requirements</td>
-                <td>Result</td>
-                <td>Guarantees</td>
-                <td>Tools</td>
-                <td>Examples</td>
+                <td>SMT</td>
+                <td>FOL</td>
+                <td>encoding</td>
+                <td>Solution</td>
+                <td>Correctness</td>
+                <td>Z3, CVC5</td>
+                <td></td>
             </tr>
             </table>
             </div>

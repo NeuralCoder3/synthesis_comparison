@@ -111,11 +111,37 @@ It can also be combined with reinforcement learning.
 
 ### Generative Networks
 
+These techniques work quite well.
+Language models, usually based on natural language, generate code.
+
+A prime example is the recent development in large language models.
+
+The query is usually given as completion problem or using natural language queries.
+Using prompting techniques, the accuracy can be increased and certain errors (e.g. syntax errors) can be mostly avoided.
+
+However, there are no guarantees about the resulting code.
+It might be slow or even wrong.
+
 
 ### Constraint Programming
 
+This general field (which also subsumes SMT) is concerned with solvers that given a domain and constraints of a problem
+find a solution satisfying all constraints.
+
+These methods can encode arbitrarily complex problems spanning a multitude of complexity classes (NP, PSpace, 2ExpTime, undecidable).
+
+The theorical principles behind the solvers are often similar as outlined with the reductions.
+However, certain problems are easier encoded in some domains than in others.
+Additionally, the formulation and encoding can greatly influence how feasible the synthesis becomes.
+
+These techniques are not developed for program synthesis and often require ingenuity and tedious rewrites to be applied.
 
 ### SMT
+
+SMT is a generalization of SAT (formula satisfiability) with theories.
+Complex semantics (especially loop-free fragments) can be encoded in SMT. Loops are non-straightforward and usually require approximations.
+
+Subcategories include synthesis where concrete instantiations (e.g. of program code fragments) are generated that do not violate assertions.
 
 
 ## Related Repositories
