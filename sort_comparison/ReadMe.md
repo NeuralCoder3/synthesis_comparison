@@ -20,6 +20,8 @@ Resources:
 
 Results: https://docs.google.com/spreadsheets/d/1KrTYNVt-A_0IoiN0O6RWO8vJDD5ZJGBcsyh7__rFS6o/edit?usp=sharing
 
+![](result.png)
+
 In conclusion, alphadev is quite good and leads the benchmarks.
 `cassioneri 15 v2` is also very fast but does not work on negative numbers.
 
