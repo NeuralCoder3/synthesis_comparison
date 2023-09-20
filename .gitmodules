@@ -1,0 +1,9 @@
+[submodule "sort_comparison/alphadev"]
+	path = sort_comparison/alphadev
+	url = https://github.com/google-deepmind/alphadev.git
+[submodule "sort_comparison/mimicry"]
+	path = sort_comparison/mimicry
+	url = https://github.com/mimicry-ai/sort.git
+[submodule "sort_comparison/cassioneri"]
+	path = sort_comparison/cassioneri
+	url = https://github.com/cassioneri/sort3.git
