@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "../functions.h"
 
 #include <array>
 #include <cstdint>
@@ -63,7 +63,7 @@ int main() {
     printf("Testing correctness...\n");
     printf("\n");
     for (auto& function : functions) {
-        test_correct(function.first, function.second);
+        test_correct(function.func, function.name.c_str());
     }
 
     // printf("\n");

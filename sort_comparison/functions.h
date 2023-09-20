@@ -5,10 +5,14 @@
 
 #include <array>
 
-using function_t = void (*)(int*);
-using test_function_t = std::pair<function_t, char const*>;
+using SortingFunction = void (*)(int*);
 
-test_function_t functions[] = {
+struct TestFunction {
+    SortingFunction func;
+    std::string name;
+};
+
+TestFunction functions[] = {
     { sort3_alphadev, "alphadev" },
 
     { sort3_cassioneri_14,     "cassioneri_14" },
