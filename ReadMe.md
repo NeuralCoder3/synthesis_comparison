@@ -42,9 +42,78 @@ give a short summary/table to compare the techniques especially with respect to 
 
 ### Summary
 
-<div style="width: 100%;">
-  <img src="Overview.svg" style="width: 100%;" alt="Click to see the source">
-</div>
+<table>
+    <tr>
+        <th>Technique</th>
+        <th>Domain</th>
+        <th>Requirements</th>
+        <th>Result</th>
+        <th>Guarantees</th>
+        <th>Tools</th>
+        <th>Examples (Applications)</th>
+    </tr>
+    <tr>
+        <td>Reinforcement Learning</td>
+        <td>Observations (Input) and Actions (Output)</td>
+        <td>Score function, non-standard encoding of problem</td>
+        <td>Action-plan(s)</td>
+        <td>None, but optimizes for score (can encode speed-requirement)</td>
+        <td>Gym, Torch</td>
+        <td>AlphaDev, AlphaTensor</td>
+    </tr>
+    <tr>
+        <td>AI Planning</td>
+        <td>Facts about states and actions</td>
+        <td>Encoding as facts</td>
+        <td>Action Sequence</td>
+        <td>Correctness, optionally Optimality (if exists)</td>
+        <td>PDDL-solver</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Genetic Programming</td>
+        <td>Genes</td>
+        <td>Fitness function</td>
+        <td>Genes</td>
+        <td>None, but good fitness</td>
+        <td>PyGad</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Generative NN</td>
+        <td>Text queries</td>
+        <td>pre-trained model</td>
+        <td>program code</td>
+        <td>None</td>
+        <td>LLMs</td>
+        <td>GPT, CoPilot</td>
+    </tr>
+    <tr>
+        <td>Constraint Programming</td>
+        <td>restrictive Constraint</td>
+        <td>specific encoding</td>
+        <td>Solution</td>
+        <td>satisfy all constraints</td>
+        <td>Prolog, Z3</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SMT</td>
+        <td>FOL</td>
+        <td>encoding</td>
+        <td>Solution</td>
+        <td>Correctness</td>
+        <td>Z3, CVC5</td>
+        <td></td>
+    </tr>
+</table>
+
+
+### Experiments
+
+https://docs.google.com/spreadsheets/d/18pV_AFn8EqWnFsXg6lTkTJtPIPQgOTxlhqvPVEM_P6M/edit?usp=sharing
+
+For MetaLift (Rosette), we converted the imperative code in a functional way by changing a world state with each instruction.
 
 ### Reinforcement Learning
 
@@ -92,6 +161,12 @@ Unlike RL, the model knows the environment and action semantics completely.
 Hence, planning is more restricted in the choice of environment.
 
 You usually define the problem in PDDL.
+
+Sort Experiment: Not applicable.
+The commands needs to be (encoded in) the actions.
+The state needs to encode a superposition/unknown register entry (otherwise, we would sort concrete elements).
+Actions need to be deterministic depending on facts.
+Together, we can not conditionally transform the state set without fully exponentially unrolling the permutations of the progra state and actions.
 
 ### Genetic Programming
 
@@ -143,6 +218,20 @@ Complex semantics (especially loop-free fragments) can be encoded in SMT. Loops 
 
 Subcategories include synthesis where concrete instantiations (e.g. of program code fragments) are generated that do not violate assertions.
 
+- [Suslik](http://comcom.csail.mit.edu/comcom/#SuSLik) (Separation Logic) -- not applicable <!-- 13 -->
+- [Synquid](http://comcom.csail.mit.edu/comcom/#Synquid) (Refinement Types) -- not imperative <!--  -->
+- [ReSyn](http://comcom.csail.mit.edu/comcom/#ReSyn) (Resource Types) -- not applicable <!--  -->
+- [Dafny](https://github.com/dafny-lang/dafny) (Hoare) -- no synthesis; focus on verification <!-- 12 -->
+- [EUSolver](https://github.com/yuntongzhang/eusolver) (SyGUS) <!-- 3 --> -- functional
+- [Euphony](https://github.com/wslee/euphony) (needs training, SyGUS) <!-- 4 -->
+- [BlinkFill](https://www.microsoft.com/en-us/research/publication/blinkfill-semi-supervised-programming-by-example-for-syntactic-string-transformations/) (semi-supervised; FlashFill + structure from inputs) <!-- 5 -->
+- [Brahma](https://github.com/wx-csy/python-brahma) (loop-free, counterexample-guided refinement) <!-- 8 -->
+- [Sketch](https://people.csail.mit.edu/asolar/papers/Solar-Lezama09.pdf) <!-- 4 -->
+- [Regae](https://sites.google.com/site/asergrp/projects/reggae) (Test generation, regex) <!-- 14 -->
+- [Stoke](https://github.com/StanfordPL/stoke) (heuristic search) <!-- 6 -->
+- [PROSE](https://www.microsoft.com/en-us/research/project/prose-framework/) (sketch, input-outpu) <!-- 4 -->
+- [Rosette](https://emina.github.io/rosette/) <!-- 4 -->
+
 
 ## Related Repositories
 - [Program Transpilation Overview](https://github.com/NeuralCoder3/transpilation)
@@ -150,6 +239,10 @@ Subcategories include synthesis where concrete instantiations (e.g. of program c
 - [Stoke for Assembly Synthesis](https://github.com/NeuralCoder3/stoke-sort)
 - [SMT Synthesis of BitArithmetic](https://github.com/shack/synth)
 - [SMT Synthesis using MetaLift (Rosette)](https://github.com/NeuralCoder3/smt_synthesis)
+
+Notes:
+- [Lecture about program synthesis](https://github.com/nadia-polikarpova/cse291-program-synthesis/tree/master)
+- [Sketch Synthesis](https://homes.cs.washington.edu/~bodik/ucb/Files/2012/CAV-2012.pdf)
 
 Papers:
 - ¹Program Synthesis, Gulwani et. al, 2017
