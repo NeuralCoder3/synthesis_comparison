@@ -51,4 +51,11 @@ add_executable(test
 add_executable(bench
   benchmark.cpp
 )
+
 target_link_libraries(bench benchmark benchmark_main)
+
+# add libsort_rust.a (${CMAKE_SOURCE_DIR}/../rust_sort/target/release/libsort_rust.a)
+# additionally compile .a file into the executable
+
+target_link_libraries(test ${CMAKE_SOURCE_DIR}/../rust_sort/target/release/libsort_rust.a)
+target_link_libraries(bench ${CMAKE_SOURCE_DIR}/../rust_sort/target/release/libsort_rust.a)

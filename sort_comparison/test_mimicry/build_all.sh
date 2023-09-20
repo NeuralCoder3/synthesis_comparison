@@ -16,9 +16,9 @@ do
         mkdir -p $OUT
         mkdir -p $BOUT
         echo "Generating $c $m assembly"
-        $c -$m -S ./test_correct.cpp -o $OUT/test_correct.s
+        $c -$m -S ./test_correct.cpp -o $OUT/test_correct.s ../rust_sort/target/release/libsort_rust.a
         echo "Building $c $m"
-        $c -$m ./benchmark.cpp -o $BOUT/bench.out
+        $c -$m ./benchmark.cpp -o $BOUT/bench.out ../rust_sort/target/release/libsort_rust.a
         echo "Running $c $m"
         $BOUT/bench.out > $OUT/time.txt 2>&1
         echo ""

@@ -36,14 +36,23 @@ names = [
     'sort3_cassioneri_faster', 
     
     'sort3_default', 
+    'sort3_default_size', 
     'sort3_std', 
     'sort3_branchless', 
+    'sort3_branchless_size', 
     'sort3_swap', 
     'sort3_swap_inline',
     
     'sort3_mimicry_ms', 
     'sort3_mimicry_mv', 
     'sort3_mimicry_std', 
+]
+names = [
+    'sort3_rust_std',
+    'sort3_rust_swap_inline_annotated',
+    'sort3_rust_swap_inline_raw',
+    'sort3_rust_branchless_min_annotated', 
+    'sort3_rust_branchless_annotated',
 ]
 for f in functions:
     name = f[0].strip().split()[0].strip(":")

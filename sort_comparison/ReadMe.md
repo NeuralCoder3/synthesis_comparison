@@ -12,7 +12,6 @@ Languages:
 - Rust
     - `cargo rustc --release -- --emit asm`
 
-
 Our baseline is the default C/Rust sort function with and without branches.
 
 Resources:
@@ -25,7 +24,7 @@ In conclusion, alphadev is quite good and leads the benchmarks.
 `cassioneri 15 v2` is also very fast but does not work on negative numbers.
 
 The manual branchless approach (shown below) is competitive to the other implementations (with a slight slowdown compared to alphadev depending on the benchmark).
-
+The std sort is surprisingly bad which might be due to an overhead (that would need partial evaluation to be resolved).
 
 Branchless implementation:
 ```C
