@@ -1,6 +1,6 @@
 This test code is based on the work of Cassioneri.
 
-To check correctness, just build test_correct.cpp (e.g. via `g++ test_correct.cpp`).
+To check correctness, just build test_correct.cpp (e.g. via `g++ -O3 test_correct.cpp ../rust_sort/target/release/libsort_rust.a`).
 
 To benchmark, build with cmake:
 ```

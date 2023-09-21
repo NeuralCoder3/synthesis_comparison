@@ -1,6 +1,7 @@
 cargo rustc --release -- --emit asm
 
 
+Needs cargo install cbindgen
 $HOME/.cargo/bin/cbindgen --config cbindgen.toml --crate rust_sort --output ../rust.h
 
 

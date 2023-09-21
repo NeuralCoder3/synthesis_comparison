@@ -2,3 +2,6 @@
 out/
 build/
 rust.h
+*.a
+*.d
+*.so
