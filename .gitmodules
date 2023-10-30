@@ -7,3 +7,6 @@
 [submodule "sort_comparison/cassioneri"]
 	path = sort_comparison/cassioneri
 	url = https://github.com/cassioneri/sort3.git
+[submodule "sort_comparison"]
+	path = sort_comparison
+	url = https://github.com/NeuralCoder3/sort_comparison.git
